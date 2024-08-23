@@ -1,6 +1,7 @@
-# YOLO_Games-EasyUse
+# YOLO_Blast-EasyFram
 
  A tool to help interact with yolo games on Blast Blockchain
+ Helps to Click Farm on YOLY Games by automatic python scripts
  Base on Python web.py
 
 ## Usage
@@ -25,14 +26,14 @@ A.laserblast.play(1, 200, 'yolo')
 ```
 or use command line:
 ```
-python main.py -p PRIVATEKEY -gn flipper -ap 0.001 -ac eth
+python main.py -p PRIVATEKEY -gn flipper  --num-rounds 1 -ap 0.001 -ac eth
 ```
 
 ## Main.py Arguments
 
     --private-key,      '-p',  help="Input your Private Key to import the wallet."
-    --game-name,        '-gn', help="Input Game Name to start a game. Keep letter lowercase. flipper/laserblast/quantum"
-    --num-rounds,              help="Input number of rounds. Numbers over 10 will be split."
+    --game-name,        '-gn', help="Input Game Name to start a game. Keep letter lowercase. flipper/laserblast/quantum". Default='laserblast' 
+    --num-rounds,              help="Input number of rounds. Numbers over 10 will be split." Default=1 
     --amount-perround, '-ap',  help="Input amount per round. Default unit of currency is yolo."
     --amount_currency, '-ac',  help="Name of currency. Must be eth or yolo"
 
